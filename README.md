@@ -1,5 +1,5 @@
 # SGM
-SGM algorithm based on Census transform
+**SGM algorithm based on Census transform**
 
 **The principle of the SGM algorithm:**  
 1.Census cost computation;  
