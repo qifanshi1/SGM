@@ -1,6 +1,7 @@
 # SGM
+***
 **SGM algorithm based on Census transform**
-
+***
 **The principle of the SGM algorithm:**  
 1.Census cost computation;  
 2.Cost aggregation(8 paths);  
