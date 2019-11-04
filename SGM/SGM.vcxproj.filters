@@ -13,5 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\config">
+      <UniqueIdentifier>{d924f108-6364-4594-826b-7bf31fc66508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\calculation">
+      <UniqueIdentifier>{106b7cfa-e0f8-4a77-841a-698cbd7f4bb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\calculation">
+      <UniqueIdentifier>{a1475b4d-a060-4123-8b6d-c58651819f36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StereoSGMPara.h">
+      <Filter>头文件\config</Filter>
+    </ClInclude>
+    <ClInclude Include="CostCalculate.h">
+      <Filter>头文件\calculation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CostCalculate.cpp">
+      <Filter>源文件\calculation</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
