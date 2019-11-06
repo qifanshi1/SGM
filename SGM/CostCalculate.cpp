@@ -57,7 +57,7 @@ void SGM::CensusCost(const std::vector<std::vector<unsigned int>>& census_left,
 	if (flag)
 	{
 		begin = std::max(maxD + half_win_size, 0);
-		end = width + ((minD - half_win_size) > 0 ? 0 : (minD - half_win_size));
+		end = std::max(width - half_win_size, 0);
 	}
 	else
 	{
@@ -148,7 +148,7 @@ void SGM::GetDisparity(const SGM::SGMPara& para,
 	if (flag)
 	{
 		begin_col = std::max(maxD + half_win_size, 0);
-		end_col = width + ((minD - half_win_size) > 0 ? 0 : (minD - half_win_size));		
+		end_col = std::max(width - half_win_size, 0);
 	}
 	else
 	{
@@ -330,7 +330,7 @@ void SGM::DisparityComputation(const SGM::SGMPara& para,
 	int begin_row = half_win_size;
 	int end_row = height - half_win_size;
 	int begin_col = std::max(maxD + half_win_size, 0);
-	int end_col = width + ((minD - half_win_size) > 0 ? 0 : (minD - half_win_size));
+	int end_col = std::max(width - half_win_size, 0);
 	int width1 = end_col - begin_col;
 	int minX = begin_col;
 	int maxX = end_col;
